@@ -1,0 +1,6 @@
+---
+applications:
+- name: node-simple-server
+  memory: 512M
+  instances: 1
+  host: simple

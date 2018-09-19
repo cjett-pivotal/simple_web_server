@@ -8,7 +8,7 @@ http.createServer(function(request, response){
   'customHeader':'myCustomHeader',
   // 'Set-Cookie':'myCookie=Cookies!',
   // 'Set-Cookie':'JSESSIONID=E7BB55477DB45B2CD3DE81FF394B3FF6'
-  'Set-Cookie': ['myCookie=Cookies!', 'JSESSIONID=E7BB55477DB45B2CD3DE81FF394B3FF6', request.headers['cookie']],
+  'Set-Cookie': ['serverCookie=Cookies!', 'JSESSIONID=E7BB55477DB45B2CD3DE81FF394B3FF6', request.headers['cookie']],
 
   });
   response.write(request.headers['cookie']);
